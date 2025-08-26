@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Business</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:0;background:#f8f9fb}
+    header{background:#2c3e50;color:#fff;padding:18px;text-align:center}
+    nav a{color:white;margin:0 12px;text-decoration:none;font-weight:bold}
+    .container{max-width:1100px;margin:40px auto;padding:0 20px}
+    section{padding:40px 20px;text-align:center}
+    h2{margin-bottom:20px}
+
+    .cta{display:inline-block;margin:10px;padding:12px 20px;background:#27ae60;color:#fff;border-radius:6px;text-decoration:none;font-weight:600}
+    .cta:hover{background:#219150}
+
+    footer{background:#2c3e50;color:white;text-align:center;padding:15px;margin-top:40px}
+
+    /* Portfolio Grid */
+    .portfolio{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:20px}
+    .card{background:#fff;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06);overflow:hidden}
+    .card img{width:100%;height:180px;object-fit:cover}
+    .card h3{margin:12px;font-size:18px}
+    .card p{margin:0 12px 20px;font-size:14px;color:#555}
+
+    /* Floating WhatsApp button */
+    .whatsapp-btn{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      width:62px;
+      height:62px;
+      border-radius:50%;
+      background:#25D366;
+      box-shadow:0 8px 20px rgba(37,211,102,0.25);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      z-index:9999;
+      cursor:pointer;
+      text-decoration:none;
+    }
+    .whatsapp-btn svg{width:34px;height:34px;display:block}
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>My Business</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="container">
+    <h2>About Us</h2>
+    <p>We help businesses grow with digital solutions.</p>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="container">
+    <h2>Our Services</h2>
+    <p>Web design, digital marketing, and automation tools.</p>
+  </section>
+
+  <!-- WORK / PORTFOLIO -->
+  <section id="work" class="container">
+    <h2>Our Work</h2>
+    <div class="portfolio">
+      <div class="card">
+        <img src="sample1.jpg" alt="Sample Project 1">
+        <h3>Project One</h3>
+        <p>Website redesign for a retail store with modern responsive design.</p>
+      </div>
+      <div class="card">
+        <img src="sample2.jpg" alt="Sample Project 2">
+        <h3>Project Two</h3>
+        <p>Brand identity and social media marketing campaign.</p>
+      </div>
+      <div class="card">
+        <img src="sample3.jpg" alt="Sample Project 3">
+        <h3>Project Three</h3>
+        <p>E-commerce store setup with secure payments.</p>
+      </div>
+      <div class="card">
+        <img src="sample4.jpg" alt="Sample Project 4">
+        <h3>Project Four</h3>
+        <p>Custom automation tool to save time and costs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Choose how you’d like to reach us:</p>
+
+    <!-- WhatsApp Button -->
+    <a href="https://api.whatsapp.com/send?phone=2349079820557&text=Hello, I’m interested in your services."
+       target="_blank" class="cta">Message us on WhatsApp</a>
+
+    <!-- Email Button -->
+    <a href="mailto:mybusiness@email.com?subject=Inquiry&body=Hello, I’d like to know more."
+       class="cta">Email Us</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 My Business. All Rights Reserved.
+  </footer>
+
+  <!-- Floating WhatsApp Icon -->
+  <a class="whatsapp-btn"
+     href="https://api.whatsapp.com/send?phone=2349079820557&text=Hello! I want to ask about your services."
+     target="_blank" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20.52 3.48A11.9 11.9 0 0 0 12 .5C6.21.5 1.5 5.21 1.5 11c0 1.95.51 3.84 1.48 5.5L.5 23.5l7.42-2.4A11.5 11.5 0 0 0 12 22c5.79 0 10.5-4.71 10.5-10.5 0-1.95-.52-3.84-1.48-5.5z" fill="#25D366"/>
+      <path d="M17.5 14.6c-.4-.2-2.3-1.1-2.6-1.2-.3-.1-.6-.1-.9.2-.3.3-1.2 1.2-1.5 1.4-.3.2-.6.3-1 .1-1.4-.4-3.1-2.1-3.5-3.6-.2-.4 0-.7.1-1 .1-.3 1-2.4 1.1-2.6.1-.3-.1-.5-.3-.7-.3-.2-.8-.6-1-.8-.3-.2-.4-.3-.7 0-.3.3-1.1 1.2-1.1 2.9 0 1.7 1.3 3.9 3 5.7 1.7 1.8 3.9 3 5.6 3.1 1.2.1 2.3.1 2.6.1.3 0 .7-.1.9-.4.3-.3.9-1 1.1-1.6.2-.6.2-1 .1-1.1-.1-.2-.4-.3-.8-.5z" fill="#fff"/>
+    </svg>
+  </a>
+</body>
+</html>
